@@ -12,11 +12,26 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        normalText: "#1C1C1C",
+        primaryText300 : "#EB455F",
+        navbarText: "#696969",
+        navbarActiveBG: "#F9FAFF",
+        headBackground: "#FCFCFC",
+        subtitleText: "#5B5958",
+        yellowText: "#FBA333",
+        error: "#F61317",
+        success: "#0DA651",
+        boxOuline: "#CBCBCB",
+        backButton: "#B8DDFF",
+        ssoButton: "#1560BD",
       },
       textShadow: {
         sm: '0 1px 2px var(--tw-shadow-color)',
         DEFAULT: '0 2px 4px var(--tw-shadow-color)',
         lg: '0 8px 16px var(--tw-shadow-color)',
+      },
+      fontFamily: {
+        lato: ["Lato", "sans-serif"],
       }
     },
   },

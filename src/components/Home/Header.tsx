@@ -6,12 +6,15 @@ type HeaderProps = {
   title: string;
   navItems: string[];
   userImage: string;
+  titleHref: string;
 };
 
-const Header: React.FC<HeaderProps> = ({ title, navItems, userImage }) => {
+const Header: React.FC<HeaderProps> = ({ title, navItems, userImage, titleHref }) => {
   return (
     <header className="flex flex-wrap gap-10 justify-between self-center px-2.5 w-full font-bold bg-zinc-50 min-h-[60px] max-md:max-w-full">
+      <Link href={titleHref} passHref>
       <h1 className="text-3xl leading-9 text-orange-400 w-[218px]" style={{ textShadow: '2px 2px 5px rgba(0, 0, 0, 0.25)' }}>{title}</h1>
+      </Link>
       <nav className="flex gap-10 items-center h-full text-2xl leading-none min-w-[240px]">
         {navItems.map((item, index) => (
           <Link
@@ -33,7 +36,7 @@ const Header: React.FC<HeaderProps> = ({ title, navItems, userImage }) => {
           height={40}
           className="object-contain shrink-0 self-stretch my-auto rounded-full"
         />
-        <span className="self-stretch my-auto">Đăng nhập</span>
+        <Link href="/auth" className="self-stretch my-auto">Đăng nhập</Link>
       </div>
     </header>
   );

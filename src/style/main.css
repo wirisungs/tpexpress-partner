@@ -1,0 +1,28 @@
+*{
+  box-sizing: border-box;
+}
+.Active{
+  font-weight: bold;
+  background: var(--Color-Background-Background, #F9FAFF);
+  border-right: thin solid #EC6E70;
+}
+
+.react-datepicker-wrapper input {
+  width: 100%;
+}
+
+.logoArea{
+  background: linear-gradient(to bottom, #5B5958, #1C1C1C);
+}
+/* Ẩn thanh tăng giảm trên Chrome, Safari */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+-webkit-appearance: none; /* Ẩn trên Chrome và Safari */
+margin: 0; /* Đảm bảo không có margin */
+}
+
+/* Ẩn thanh tăng giảm trên Firefox */
+input[type="number"] {
+appearance: textfield; /* Standard property for compatibility */
+-moz-appearance: textfield; /* Ẩn trên Firefox */
+}

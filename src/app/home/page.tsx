@@ -22,7 +22,7 @@ const ThienPhucExpress: React.FC = () => {
   return (
     <div className="flex overflow-hidden flex-col bg-zinc-50 text-neutral-900">
       <div className="flex flex-col w-full max-md:max-w-full">
-        <Header title="TPEXPRESS" navItems={navItems} userImage="/user-avatar.jpg" />
+        <Header title="TPEXPRESS" navItems={navItems} userImage="/public/assets/avatar.jpg" />
         <main className="flex flex-col px-8 py-6 w-full text-lg font-medium max-md:px-5 max-md:max-w-full">
           <Hero
             imageSrc="/assets/Logistics.png"
